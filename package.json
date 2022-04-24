@@ -1,0 +1,29 @@
+{
+  "name": "react-ecommerce",
+  "version": "1.0.0",
+  "description": "Mern Ecommerce",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\" " 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AFernandoGonzalez/fullstack-react-ecommerce.git"
+  },
+  "author": "Fernando Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AFernandoGonzalez/fullstack-react-ecommerce/issues"
+  },
+  "homepage": "https://github.com/AFernandoGonzalez/fullstack-react-ecommerce#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  }
+}

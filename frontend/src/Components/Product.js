@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
-import products from '../products'
+import products from '../Screens/products'
 import Rating from '../Components/Rating'
 import { Link} from 'react-router-dom'
 
@@ -21,7 +21,7 @@ const Product = ({ product }) => {
                     {/* pass this to the rating.js value and text */}
                     <Rating value={product.rating} text={`${product.numReviews} reviews`}  />
                 </Card.Text>
-                <Card.Text as='h3'>${product.price}</Card.Text>
+                <Card.Text as='h3'>$ {product.price}</Card.Text>
             </Card.Body>
         </Card>
     )

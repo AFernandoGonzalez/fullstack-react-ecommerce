@@ -34,7 +34,7 @@ Rating.defaultProps = {
 // set this as an object
 // this PropTypes provides warnings of what type of value should be pass
 Rating.propTypes = {
-    value: PropTypes.number.isRequired,
+    // value: PropTypes.number.isRequired,
     text: PropTypes.string.isRequired,
     color: PropTypes.string,
 }

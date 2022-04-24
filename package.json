@@ -7,7 +7,7 @@
     "start": "node backend/server",
     "server": "nodemon backend/server",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\" " 
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/AFernandoGonzalez/fullstack-react-ecommerce#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
+    "env": "^0.0.2",
     "express": "^4.17.3"
   },
   "devDependencies": {

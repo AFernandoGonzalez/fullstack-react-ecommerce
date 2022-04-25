@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Mern Ecommerce",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\" "
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "repository": {
     "type": "git",
@@ -20,9 +23,13 @@
   },
   "homepage": "https://github.com/AFernandoGonzalez/fullstack-react-ecommerce#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
     "dotenv": "^16.0.0",
     "env": "^0.0.2",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.3.1"
   },
   "devDependencies": {
     "concurrently": "^7.1.0",
